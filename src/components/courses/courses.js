@@ -25,16 +25,19 @@ const Course = () => {
   };
   return (
     <div className="course">
-      <h2 className="about__head">Find What Inspire You</h2>
-
-      <ul className="course__nav">
-        <li className="course__item">Design</li>
-        <li className="course__item">Writing</li>
-        <li className="course__item">Animation</li>
-        <li className="course__item">Business</li>
-        <li className="course__item">Coding</li>
-        <li className="course__item">Editing</li>
-      </ul>
+      <Fade bottom>
+        <h2 className="about__head">Find What Inspire You</h2>
+      </Fade>
+      <Fade>
+        <ul className="course__nav">
+          <li className="course__item">Design</li>
+          <li className="course__item">Writing</li>
+          <li className="course__item">Animation</li>
+          <li className="course__item">Business</li>
+          <li className="course__item">Coding</li>
+          <li className="course__item">Editing</li>
+        </ul>
+      </Fade>
       <div className="course__holder">
         <Carousel {...settings}>
           <div className="card-holder">

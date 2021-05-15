@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="about">
       <div className="about__col">
-        <Fade left delay={0}>
+        <Fade left>
           <h2 className="about__head">
             Bridge To <br />
             Your Dreams
