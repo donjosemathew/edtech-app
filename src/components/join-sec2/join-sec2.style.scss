@@ -1,0 +1,40 @@
+.joinsec2 {
+  background: #ff4e6c;
+  align-items: flex-start;
+  @media screen and (max-width: 768px) {
+    padding: 9rem 2rem;
+    align-items: center;
+  }
+}
+.img-women2 {
+  right: 18rem;
+  height: 400px;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  @media screen and (max-width: 768px) {
+    right: 1px;
+    height: 200px;
+  }
+}
+.circle2 {
+  width: 25rem;
+  top: 12rem;
+  height: 25rem;
+  border-radius: 50%;
+  position: absolute;
+  right: calc(18rem + 9rem);
+  background-color: rgba(255, 255, 255, 0.13);
+  @media screen and (max-width: 768px) {
+    height: 10rem;
+    width: 10rem;
+    top: 9rem;
+    right: calc(18rem + 18rem);
+  }
+}
+.head2 {
+  text-align: left;
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+}
