@@ -20,7 +20,7 @@ const Feature = () => {
         </Fade>
       </div>
       <div className="feature__col2">
-        <Fade right duration={1000}>
+        <Fade duration={1000}>
           <div className="">
             <MyImage
               src="/images/feature1.jpg"
