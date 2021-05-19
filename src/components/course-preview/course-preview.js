@@ -10,7 +10,7 @@ function Coursepreview() {
     <div
       className="course-preview"
       style={{
-        backgroundImage: `url("https://images.unsplash.com/photo-1621299279972-953c4d55696f")`,
+        backgroundImage: `url("https://images.unsplash.com/photo-1531403009284-440f080d1e12")`,
       }}
     >
       <div className="course-preview__container">

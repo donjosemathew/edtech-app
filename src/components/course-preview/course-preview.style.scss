@@ -3,10 +3,17 @@
   background-size: cover;
   background-position: center;
   overflow: hidden;
+  @media screen and (max-width: 768px) {
+    overflow: auto;
+  }
   &__head {
     font-size: 2.5rem;
     font-weight: 500;
     width: 60%;
+    @media screen and (max-width: 768px) {
+      width: 90%;
+      text-align: center;
+    }
   }
   &__text {
     font-size: 1.8rem;
@@ -21,6 +28,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
   }
   &__container {
     padding: 5rem;
@@ -43,11 +53,18 @@
         align-items: flex-start;
         padding: 2rem;
         padding-left: 0;
+        @media screen and (max-width: 768px) {
+          justify-content: center;
+          align-items: center;
+        }
       }
       &__col2 {
         background-color: #ffffff28;
         padding: 2rem;
         margin-bottom: 3rem;
+      }
+      @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
       }
     }
   }
@@ -85,6 +102,10 @@
     background-color: #db2d3b;
     font-family: inherit;
     color: #ffffffda;
+    &:hover {
+      background-color: rgb(236, 76, 90);
+      cursor: pointer;
+    }
     span {
       margin-left: 5px;
     }
