@@ -1,0 +1,62 @@
+.course-preview {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  &__head {
+    font-size: 2.5rem;
+    font-weight: 500;
+    width: 60%;
+  }
+  &__text {
+    font-size: 1.8rem;
+    color: #ffffffda;
+  }
+  &__bottom {
+    padding: 2rem;
+    margin: 2rem 0 1rem 0;
+    background-color: #ffffff28;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__container {
+    padding: 5rem;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      237.82deg,
+      rgba(66, 62, 62, 0.54) 27.05%,
+      rgba(0, 0, 0, 0.56) 98.5%
+    );
+    &__grid {
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr 0.6fr;
+      &__col1 {
+        //background-color: cadetblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 2rem;
+        padding-left: 0;
+      }
+      &__col2 {
+        background-color: chartreuse;
+      }
+    }
+  }
+  .teacher-img {
+    height: 6rem;
+  }
+  .teacher,
+  .time {
+    font-size: 15px;
+    color: #ffffffda;
+  }
+  .icon-course {
+    color: #ffffffda;
+  }
+}

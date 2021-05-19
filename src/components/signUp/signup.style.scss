@@ -1,0 +1,24 @@
+.signup {
+  overflow: hidden;
+  grid-template-columns: 0.6fr 1fr;
+  &__col1 {
+    align-items: flex-end;
+
+    background-image: linear-gradient(
+        237.82deg,
+        rgba(66, 62, 62, 0.54) 27.05%,
+        rgba(0, 0, 0, 0.56) 98.5%
+      ),
+      url("https://images.unsplash.com/photo-1521312706689-fbd93fd5af46?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=726&q=80");
+    @media screen and (max-width: 768px) {
+      grid-row: 1;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr;
+    height: 120vh;
+  }
+}
