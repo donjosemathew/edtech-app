@@ -2,6 +2,7 @@
   height: 100vh;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
   &__head {
     font-size: 2.5rem;
     font-weight: 500;
@@ -44,7 +45,9 @@
         padding-left: 0;
       }
       &__col2 {
-        background-color: chartreuse;
+        background-color: #ffffff28;
+        padding: 2rem;
+        margin-bottom: 3rem;
       }
     }
   }
@@ -58,5 +61,32 @@
   }
   .icon-course {
     color: #ffffffda;
+  }
+  ul {
+    padding: 1.5rem;
+    list-style: none;
+    font-size: 13px;
+    color: #ffffffda;
+    width: 90%;
+  }
+}
+.btn-holder {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  button {
+    border: none;
+    outline: none;
+    padding: 1rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #db2d3b;
+    font-family: inherit;
+    color: #ffffffda;
+    span {
+      margin-left: 5px;
+    }
   }
 }

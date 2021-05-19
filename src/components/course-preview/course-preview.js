@@ -2,6 +2,9 @@ import React from "react";
 import "./course-preview.style.scss";
 import { Link } from "react-router-dom";
 import { IoMdTime, IoMdPerson } from "react-icons/io";
+import "video-react/dist/video-react.css"; // import css
+import { Player, BigPlayButton } from "video-react";
+import { BsHeart, BsPlusCircle } from "react-icons/bs";
 function Coursepreview() {
   return (
     <div
@@ -49,7 +52,34 @@ function Coursepreview() {
               </div>
             </div>
           </div>
-          <div className="course-preview__container__grid__col2">s</div>
+          <div className="course-preview__container__grid__col2">
+            <Player
+              src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+              muted="true"
+              autoplay="true"
+            >
+              <BigPlayButton position="center" />
+            </Player>
+            <ul>
+              <li>
+                &#10004; Handle advanced techniques like Dimensionality
+                Reduction
+              </li>
+              <li>&#10004; Create strong added value to your business</li>
+              <li>&#10004; Make robust Machine Learning models</li>
+              <li>&#10004; Make accurate predictions</li>
+            </ul>
+            <div className="btn-holder">
+              <button>
+                <BsHeart />
+                <span> Wishlist</span>
+              </button>
+              <button>
+                <BsPlusCircle />
+                <span> Enroll Now</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
