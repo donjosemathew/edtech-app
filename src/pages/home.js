@@ -8,6 +8,7 @@ import Headerbtm from "../components/header/header-btm";
 import Joinsec1 from "../components/join-sec1/join-sec1";
 import Joinsec2 from "../components/join-sec2/join-sec2";
 import Navbar from "../components/navbar/navbar";
+import Contact from "../components/contact/contact";
 const Home = () => {
   return (
     <div className="home">
@@ -20,6 +21,7 @@ const Home = () => {
       <Feature />
       <Feature2 />
       <Testimonial />
+      <Contact />
     </div>
   );
 };

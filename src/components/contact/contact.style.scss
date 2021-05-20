@@ -1,0 +1,46 @@
+.contact {
+  padding: 4rem;
+  margin: 4rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  &__col1 {
+    background-color: #2d9cdb;
+    border-radius: 5px;
+    padding: 4rem;
+  }
+  &__col2 {
+    padding: 2rem;
+  }
+  &__head {
+    color: #ffffff;
+    font-size: 3.5rem;
+  }
+  &__sub {
+    color: #ffffffbd;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+  }
+  &__icn {
+    color: rgb(255, 255, 255);
+  }
+  &__col-holder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 3rem 0;
+    // width: 40%;
+  }
+  &__text {
+    font-size: 1.7rem;
+    margin: 0;
+    margin-left: 2rem;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    &:hover {
+      color: #25080d;
+      letter-spacing: 1px;
+      cursor: pointer;
+    }
+  }
+}
