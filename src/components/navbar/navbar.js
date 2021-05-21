@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className="nav">
       <img src="/images/logo.svg" alt="Logo" className="nav__logo" />
       <div>
-        <ul className="nav-items">
+        <ul className="nav-items ">
           <li className="nav__item">
             <NavLink to="/" className="nav__link">
               HOME

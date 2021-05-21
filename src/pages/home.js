@@ -9,6 +9,7 @@ import Joinsec1 from "../components/join-sec1/join-sec1";
 import Joinsec2 from "../components/join-sec2/join-sec2";
 import Navbar from "../components/navbar/navbar";
 import Contact from "../components/contact/contact";
+import Footer from "../components/footer/footer";
 const Home = () => {
   return (
     <div className="home">
@@ -22,6 +23,7 @@ const Home = () => {
       <Feature2 />
       <Testimonial />
       <Contact />
+      <Footer />
     </div>
   );
 };
