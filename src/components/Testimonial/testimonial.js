@@ -6,6 +6,38 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import TestimonialCard from "./testimonial-card";
 const Testimonial = () => {
+  const testidata = [
+    {
+      user: "Pauline Robinson",
+      img: "/images/users/65.jpg",
+      clg: "University of Oxford",
+      id: 1,
+    },
+    {
+      user: "Marie Chapman",
+      img: "/images/users/user.jpg",
+      clg: "Australian National University",
+      id: 2,
+    },
+    {
+      user: "Wyatt Carr",
+      img: "/images/users/79.jpg",
+      clg: "Imperial College London",
+      id: 3,
+    },
+    {
+      user: "Marion Fernandez",
+      img: "/images/users/77.jpg",
+      clg: "University College London",
+      id: 4,
+    },
+    {
+      user: "Pauline Robinson",
+      img: "/images/users/46.jpg",
+      clg: "University of Oxford",
+      id: 5,
+    },
+  ];
   const settings = {
     dots: true,
     infinite: true,
@@ -36,21 +68,9 @@ const Testimonial = () => {
       </p>
       <div className="testimonial__holder">
         <Carousel {...settings}>
-          <div className="testimonial__section">
-            <TestimonialCard />
-          </div>
-          <div className="testimonial__section">
-            <TestimonialCard />
-          </div>
-          <div className="testimonial__section">
-            <TestimonialCard />
-          </div>
-          <div className="testimonial__section">
-            <TestimonialCard />
-          </div>
-          <div className="testimonial__section">
-            <TestimonialCard />
-          </div>
+          {testidata.map((data) => {
+            return <TestimonialCard key={data.id} data={data} />;
+          })}
         </Carousel>
       </div>
     </div>

@@ -1,14 +1,14 @@
 import React from "react";
 import "./feature2.style.scss";
 import Fade from "react-reveal/Fade";
-import MyImage from "../lazyImage";
+
 const Feature2 = () => {
   return (
     <div className="feature2">
       <div className="feature2__col2">
         <Fade duration={1000}>
           <div className="">
-            <MyImage
+            <img
               src="/images/feature2.jpg"
               alt="Feature Section"
               className="feature2__img"

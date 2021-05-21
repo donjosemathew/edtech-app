@@ -22,7 +22,7 @@ const Feature = () => {
       <div className="feature__col2">
         <Fade duration={1000}>
           <div className="">
-            <MyImage
+            <img
               src="/images/feature1.jpg"
               alt="Feature Section"
               className="feature__img"

@@ -33,7 +33,34 @@ const Course = () => {
       instrImg: "/images/users/79.jpg",
       hours: "50",
       student: "5000+",
-      id: 2,
+      id: 3,
+    },
+    {
+      head: "User Experience Design Essentials",
+      instructor: "Deanna Cooper",
+      img: "https://images.unsplash.com/photo-1586717799252-bd134ad00e26?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+      instrImg: "/images/users/65.jpg",
+      hours: "40",
+      student: "2500+",
+      id: 4,
+    },
+    {
+      head: "Graphic Design Masterclass - Learn GREAT Design",
+      instructor: "Abigail Sutton",
+      img: "https://images.unsplash.com/photo-1551547600-8d30c2559da8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80",
+      instrImg: "/images/users/77.jpg",
+      hours: "40",
+      student: "4500+",
+      id: 5,
+    },
+    {
+      head: "The Web Developer Bootcamp 2021",
+      instructor: "Jesus Weaver",
+      img: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+      instrImg: "/images/users/79.jpg",
+      hours: "50",
+      student: "5000+",
+      id: 6,
     },
   ];
 
@@ -71,7 +98,7 @@ const Course = () => {
       <div className="course__holder">
         <Carousel {...settings}>
           {data.map((data) => {
-            return <Card data={data} />;
+            return <Card data={data} key={data.id} />;
           })}
         </Carousel>
       </div>
