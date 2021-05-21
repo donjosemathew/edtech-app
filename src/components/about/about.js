@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 import MyImage from "../lazyImage";
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" name="about">
       <div className="about__col">
         <Fade left>
           <h2 className="about__head">

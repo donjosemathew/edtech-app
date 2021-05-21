@@ -1,9 +1,12 @@
 .footer {
   padding: 6rem 4rem;
-  background-color: #585858;
+  background-color: #3b3b3b;
   &__items {
     padding: 0;
     background-color: transparent;
     padding: 2rem;
+    li {
+      font-size: 1.4rem;
+    }
   }
 }

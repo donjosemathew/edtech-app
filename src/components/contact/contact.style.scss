@@ -1,15 +1,33 @@
 .contact {
   padding: 4rem;
-  margin: 4rem 2rem;
+  margin: 6rem 2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    margin: 3rem 2rem;
+  }
+  &__img {
+    width: 100%;
+    object-fit: cover;
+    transform: translateX(25%);
+    border-radius: 22px;
+    @media screen and (max-width: 768px) {
+      transform: translateX(0);
+    }
+  }
   &__col1 {
     background-color: #2d9cdb;
     border-radius: 5px;
     padding: 4rem;
   }
   &__col2 {
-    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 768px) {
+      padding: 2.5rem;
+    }
   }
   &__head {
     color: #ffffff;

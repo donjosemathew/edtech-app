@@ -10,6 +10,7 @@ import Joinsec2 from "../components/join-sec2/join-sec2";
 import Navbar from "../components/navbar/navbar";
 import Contact from "../components/contact/contact";
 import Footer from "../components/footer/footer";
+
 const Home = () => {
   return (
     <div className="home">
@@ -18,6 +19,7 @@ const Home = () => {
       <About />
       <Joinsec1 />
       <Joinsec2 />
+
       <Course />
       <Feature />
       <Feature2 />

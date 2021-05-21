@@ -2,6 +2,7 @@ import React from "react";
 import "./join-sec1.style.scss";
 import Fade from "react-reveal/Fade";
 import { BsArrowRightShort } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Joinsec1 = () => {
   return (
@@ -11,10 +12,12 @@ const Joinsec1 = () => {
           Learn Any Time,<span>Any Where</span>
         </h3>
       </Fade>
-      <div className="joinbtn">
-        Join As Student
-        <BsArrowRightShort size="2em" className="icon" />
-      </div>
+      <Link to="/signin" style={{ textDecoration: "none" }}>
+        <div className="joinbtn">
+          Join As Student
+          <BsArrowRightShort size="2em" className="icon" />
+        </div>
+      </Link>
       <Fade>
         <img
           src="/images/joinsec-1.png"

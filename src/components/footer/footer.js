@@ -1,5 +1,6 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+
+import { Link } from "react-scroll";
 import "./footer.style.scss";
 const Footer = () => {
   return (
@@ -7,26 +8,26 @@ const Footer = () => {
       <nav className="nav footer__items">
         <img src="/images/logo.svg" alt="Logo" className="nav__logo" />
         <div>
-          <ul className="nav-items">
+          <ul className="nav-items ">
             <li className="nav__item">
-              <NavLink to="/" className="nav__link">
+              <Link to="/" className="nav__link">
                 HOME
-              </NavLink>
+              </Link>
             </li>
             <li className="nav__item">
-              <NavLink to="/" className="nav__link">
+              <Link to="course" className="nav__link">
                 COURSES
-              </NavLink>
+              </Link>
             </li>
             <li className="nav__item">
-              <NavLink to="/" className="nav__link">
+              <Link to="about" className="nav__link">
                 ABOUT
-              </NavLink>
+              </Link>
             </li>
             <li className="nav__item">
-              <NavLink to="/" className="nav__link">
-                FAQ
-              </NavLink>
+              <Link to="contact" className="nav__link">
+                CONTACTUS
+              </Link>
             </li>
           </ul>
         </div>
